@@ -40,7 +40,7 @@
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:text="월간"  />
+            android:text="월간압낟어"  />
 
         <Button
             android:id="@+id/btn2"
