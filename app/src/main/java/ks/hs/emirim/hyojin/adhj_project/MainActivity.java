@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener btnListener2 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(getApplicationContext(),MainActivity2.class);
+            Intent intent = new Intent(getApplicationContext(), WeekActivity.class);
             startActivity(intent);
             finish();
         }
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener btnListener3 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+            Intent intent = new Intent(getApplicationContext(), DayActivity.class);
             startActivity(intent);
             finish();
         }
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener btnListener4 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(getApplicationContext(),MainActivity4.class);
+            Intent intent = new Intent(getApplicationContext(), StatisticsActivity.class);
             startActivity(intent);
             finish();
         }

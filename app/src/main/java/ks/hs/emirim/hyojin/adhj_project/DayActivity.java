@@ -7,12 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity2 extends AppCompatActivity {
+public class DayActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_day);
 
         Button btn1 = findViewById(R.id.btn1);
         btn1.setOnClickListener(btnListener1);
@@ -38,7 +38,7 @@ public class MainActivity2 extends AppCompatActivity {
     View.OnClickListener btnListener2 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(getApplicationContext(),MainActivity2.class);
+            Intent intent = new Intent(getApplicationContext(), WeekActivity.class);
             startActivity(intent);
             finish();
         }
@@ -46,7 +46,7 @@ public class MainActivity2 extends AppCompatActivity {
     View.OnClickListener btnListener3 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+            Intent intent = new Intent(getApplicationContext(), DayActivity.class);
             startActivity(intent);
             finish();
         }
@@ -54,7 +54,7 @@ public class MainActivity2 extends AppCompatActivity {
     View.OnClickListener btnListener4 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(getApplicationContext(),MainActivity4.class);
+            Intent intent = new Intent(getApplicationContext(), StatisticsActivity.class);
             startActivity(intent);
             finish();
         }

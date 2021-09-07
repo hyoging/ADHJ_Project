@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity3">
+    tools:context=".StatisticsActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="세번째 화면입니다."/>
+        android:text="네번째 화면입니다."/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -32,28 +32,28 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/menu1"
+            android:id="@+id/btn1"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
             android:text="월간"  />
 
         <Button
-            android:id="@+id/menu2"
+            android:id="@+id/btn2"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
             android:text="주간"  />
 
         <Button
-            android:id="@+id/menu3"
+            android:id="@+id/btn3"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
             android:text="일간"  />
 
         <Button
-            android:id="@+id/menu4"
+            android:id="@+id/btn4"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"

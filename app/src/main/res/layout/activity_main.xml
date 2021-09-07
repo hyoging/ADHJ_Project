@@ -36,28 +36,28 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/menu1"
+            android:id="@+id/btn1"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
             android:text="월간"  />
 
         <Button
-            android:id="@+id/menu2"
+            android:id="@+id/btn2"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
             android:text="주간"  />
 
         <Button
-            android:id="@+id/menu3"
+            android:id="@+id/btn3"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
             android:text="일간"  />
 
         <Button
-            android:id="@+id/menu4"
+            android:id="@+id/btn4"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
