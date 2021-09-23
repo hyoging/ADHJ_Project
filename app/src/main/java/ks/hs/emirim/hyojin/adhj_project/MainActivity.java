@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 textView2.setVisibility(View.INVISIBLE);
                 cha_Btn.setVisibility(View.INVISIBLE);
                 del_Btn.setVisibility(View.INVISIBLE);
-                diaryTextView.setText(String.format("%d / %d / %d",year,month+1,dayOfMonth));
+                diaryTextView.setText(String.format("%d / %d  / %d",year,month+1,dayOfMonth));
                 contextEditText.setText("");
                 checkDay(year,month,dayOfMonth,userID);
             }
