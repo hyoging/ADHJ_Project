@@ -7,10 +7,20 @@
     android:orientation="vertical"
     tools:context=".StatisticsActivity">
 
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="네번째 화면입니다."/>
+        android:textSize="35dp"
+        android:layout_gravity="center_horizontal"
+        android:text="6월 통계"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.github.mikephil.charting.charts.PieChart>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,8 +33,12 @@
             android:orientation="vertical">
 
 
+
+
         </LinearLayout>
     </ScrollView>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,8 +71,13 @@
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:text="통계입니다"  />
+            android:text="통계입니다"
+            />
+
+
+
 
     </LinearLayout>
+
 
 </LinearLayout>
