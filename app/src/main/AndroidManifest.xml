@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ADHJ_Project">
-        <activity android:name=".StatisticsActivity"></activity>
+        <activity android:name=".graphActivity"></activity>
+        <activity android:name=".StatisticsActivity" />
         <activity android:name=".DayActivity" />
         <activity
             android:name=".SplashActivity"
@@ -26,4 +27,3 @@
     </application>
 
 </manifest>
-
