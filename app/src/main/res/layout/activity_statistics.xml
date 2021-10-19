@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:textSize="35dp"
         android:layout_gravity="center_horizontal"
-        android:text="6월 통계"/>
+        android:text="9월 통계"/>
 
     <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/piechart"
