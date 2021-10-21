@@ -69,5 +69,6 @@ public class graphActivity extends AppCompatActivity {
         lineChart.setDescription(description);
         lineChart.animateY(2000, Easing.EaseInBack);
         lineChart.invalidate();
+
     }
 }
