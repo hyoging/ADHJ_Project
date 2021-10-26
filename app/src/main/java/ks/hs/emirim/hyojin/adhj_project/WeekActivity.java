@@ -97,5 +97,6 @@ public class WeekActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+
     };
 }

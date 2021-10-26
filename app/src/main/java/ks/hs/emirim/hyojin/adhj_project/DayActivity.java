@@ -58,5 +58,6 @@ public class DayActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+
     };
 }
