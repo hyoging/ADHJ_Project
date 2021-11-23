@@ -28,9 +28,10 @@
 
 
     <TextView
-        android:fontFamily=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumbarunpenb"
+
         android:textSize="35dp"
         android:layout_gravity="center_horizontal"
         android:text="9월 통계"/>
@@ -69,6 +70,7 @@
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
+            android:fontFamily="@font/nanumbarunpenb"
             android:text="월간"  />
 
         <Button
@@ -76,6 +78,7 @@
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
+            android:fontFamily="@font/nanumbarunpenb"
             android:text="주간"  />
 
         <Button
@@ -83,6 +86,7 @@
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
+            android:fontFamily="@font/nanumbarunpenb"
             android:text="일간"  />
 
         <Button
@@ -90,6 +94,7 @@
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
+            android:fontFamily="@font/nanumbarunpenb"
             android:text="통계입니다"
             />
 
