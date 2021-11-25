@@ -36,11 +36,23 @@ public class WeekActivity extends AppCompatActivity {
 
 
         List list = new ArrayList();
-        list.add("10월 1일");
-        list.add("10월 2일");
+        list.add("1월");
+        list.add("2월");
+        list.add("3월");
+        list.add("4월");
+        list.add("5월");
+        list.add("6월");
+        list.add("7월");
+        list.add("8월");
+        list.add("9월");
+        list.add("10월");
+        list.add("11월");
+        list.add("12월");
 
-        ArrayAdapter<String> adpater = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,list);
+        ArrayAdapter<String> adpater = new ArrayAdapter<>(this, android.R.layout.simple_expandable_list_item_1,list);
         listView.setAdapter(adpater);
+        listView.setDividerHeight(30);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> a_parent, View a_view, int a_position, long a_id) {
@@ -50,6 +62,8 @@ public class WeekActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
     }
 
     View.OnClickListener btnListener1 = new View.OnClickListener() {

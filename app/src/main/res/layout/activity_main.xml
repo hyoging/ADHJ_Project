@@ -36,6 +36,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumbarunpenb"
                 android:gravity= "center"
                 android:id="@+id/diaryTextView" android:layout_marginTop="5dp"
                 app:layout_constraintTop_toBottomOf="@+id/calendarView" app:layout_constraintEnd_toEndOf="parent"
@@ -48,6 +49,7 @@
                 android:inputType="textMultiLine"
                 android:ems="10"
                 android:id="@+id/contextEditText"
+                android:fontFamily="@font/nanumbarunpenb"
                 app:layout_constraintTop_toBottomOf="@+id/diaryTextView" android:layout_marginTop="7dp"
                 android:hint="내용을 입력하세요." android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginRight="8dp" android:layout_marginStart="8dp"
@@ -58,6 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2"
+                android:fontFamily="@font/nanumbarunpenb"
                 app:layout_constraintTop_toTopOf="@+id/contextEditText"
                 app:layout_constraintBottom_toBottomOf="@+id/contextEditText" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
@@ -70,6 +73,7 @@
                 android:layout_height="0dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:fontFamily="@font/nanumbarunpenb"
                 android:layout_marginEnd="8dp"
                 android:gravity="center"
                 android:text="달력일기장"
@@ -89,6 +93,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="20dp"
+                android:fontFamily="@font/nanumbarunpenb"
                 android:layout_marginTop="-15dp"
                 android:text="저장"
                 android:visibility="invisible"
@@ -98,6 +103,7 @@
 
             <Button
                 android:text="수정"
+                android:fontFamily="@font/nanumbarunpenb"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/cha_Btn"
@@ -114,6 +120,7 @@
                 android:layout_marginTop="-50dp"
                 android:layout_marginEnd="8dp"
                 android:text="삭제"
+                android:fontFamily="@font/nanumbarunpenb"
                 android:visibility="invisible"
                 app:layout_constraintBaseline_toBaselineOf="@+id/cha_Btn"
                 app:layout_constraintEnd_toEndOf="@+id/save_Btn" />
@@ -128,6 +135,7 @@
             android:id="@+id/btn1"
             android:layout_width="0dp"
             android:layout_height="80dp"
+            android:fontFamily="@font/nanumbarunpenb"
             android:layout_weight="1"
             android:text="월간"  />
 
@@ -135,6 +143,7 @@
             android:id="@+id/btn2"
             android:layout_width="0dp"
             android:layout_height="80dp"
+            android:fontFamily="@font/nanumbarunpenb"
             android:layout_weight="1"
             android:text="주간"  />
 
@@ -142,6 +151,7 @@
             android:id="@+id/btn3"
             android:layout_width="0dp"
             android:layout_height="80dp"
+            android:fontFamily="@font/nanumbarunpenb"
             android:layout_weight="1"
             android:text="일간"  />
 
@@ -149,6 +159,7 @@
             android:id="@+id/btn4"
             android:layout_width="0dp"
             android:layout_height="80dp"
+            android:fontFamily="@font/nanumbarunpenb"
             android:layout_weight="1"
             android:text="통계"  />
     </LinearLayout>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -59,6 +60,18 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
-
     };
+
+        @Override
+        public boolean onOptionsItemSelected(MenuItem item) {
+            switch (item.getItemId()){
+                case android.R.id.home:{ //toolbar의 back키 눌렀을 때 동작
+                    // 액티비티 이동
+                    finish();
+                    return true;
+                }
+            }
+            return super.onOptionsItemSelected(item);
+        }
+
 }
