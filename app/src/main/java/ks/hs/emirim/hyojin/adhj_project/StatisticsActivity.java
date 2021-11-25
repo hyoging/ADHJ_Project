@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 import com.github.mikephil.charting.charts.PieChart;
@@ -25,11 +26,14 @@ import java.util.ArrayList;
 
 public class StatisticsActivity extends AppCompatActivity {
     PieChart pieChart;
+    private long backKeyPressedTime = 0;
+    private Toast toast;
 
     public StatisticsActivity() {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +42,7 @@ public class StatisticsActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.next_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//뒤로가기
+
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolbar.setTitleTextColor(Color.rgb(100, 98, 98));
 
@@ -66,6 +71,7 @@ public class StatisticsActivity extends AppCompatActivity {
         pieChart.setTransparentCircleRadius(61f);
 
         ArrayList<PieEntry> yValues = new ArrayList<PieEntry>();
+
 
         yValues.add(new PieEntry(34f, "식비"));
         yValues.add(new PieEntry(23f, "교통비"));
@@ -119,14 +125,18 @@ public class StatisticsActivity extends AppCompatActivity {
             finish();
         }
     };
-
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home: {
-                finish();
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                return true;
             }
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 
 }
