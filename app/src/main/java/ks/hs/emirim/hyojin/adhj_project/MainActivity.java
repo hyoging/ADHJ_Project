@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
                     // 액티비티 이동
                     finish();
                     return true;
+
                 }
             }
             return super.onOptionsItemSelected(item);
