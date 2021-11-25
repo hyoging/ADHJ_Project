@@ -133,6 +133,7 @@ public class StatisticsActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
                 return true;
+
             }
         }
         return super.onOptionsItemSelected(item);
