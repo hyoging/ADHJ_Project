@@ -115,6 +115,7 @@ public class StatisticsActivity extends AppCompatActivity {
             Intent intent = new Intent(getApplicationContext(), DayActivity.class);
             startActivity(intent);
             finish();
+
         }
     };
     View.OnClickListener btnListener4 = new View.OnClickListener() {
