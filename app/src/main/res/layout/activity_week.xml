@@ -48,7 +48,7 @@
             android:text="주간"  />
 
         <Button
-            android:id="@+id/btn3"
+            android:id="@+id/calendar_week_btn"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"

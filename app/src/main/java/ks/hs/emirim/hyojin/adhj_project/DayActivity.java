@@ -1,10 +1,14 @@
 package ks.hs.emirim.hyojin.adhj_project;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
+import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 
 public class DayActivity extends AppCompatActivity {
@@ -20,11 +24,12 @@ public class DayActivity extends AppCompatActivity {
         Button btn2 = findViewById(R.id.btn2);
         btn2.setOnClickListener(btnListener2);
 
-        Button btn3 = findViewById(R.id.btn3);
+        Button btn3 = findViewById(R.id.calendar_week_btn);
         btn3.setOnClickListener(btnListener3);
 
         Button btn4 = findViewById(R.id.btn4);
         btn4.setOnClickListener(btnListener4);
+
     }
 
     View.OnClickListener btnListener1 = new View.OnClickListener() {

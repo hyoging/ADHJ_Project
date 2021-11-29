@@ -52,7 +52,7 @@ public class StatisticsActivity extends AppCompatActivity {
         Button btn2 = findViewById(R.id.btn2);
         btn2.setOnClickListener(btnListener2);
 
-        Button btn3 = findViewById(R.id.btn3);
+        Button btn3 = findViewById(R.id.calendar_week_btn);
         btn3.setOnClickListener(btnListener3);
 
         Button btn4 = findViewById(R.id.btn4);
@@ -112,7 +112,7 @@ public class StatisticsActivity extends AppCompatActivity {
     View.OnClickListener btnListener3 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(getApplicationContext(), DayActivity.class);
+            Intent intent = new Intent(getApplicationContext(), TaTCalendarWeekActivity.class);
             startActivity(intent);
             finish();
 

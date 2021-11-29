@@ -2,6 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calendarweekview"
+    android:clickable="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -25,13 +27,11 @@
             />
     </androidx.appcompat.widget.Toolbar>
 
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/nanumbarunpenb"
-        android:text="세번째 화면입니다."/>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/nanumbarunpenb"-->
+<!--        android:text="세번째 화면입니다."/>-->
 
     <ScrollView
         android:layout_width="match_parent"
@@ -72,7 +72,7 @@
             android:text="주간"  />
 
         <Button
-            android:id="@+id/btn3"
+            android:id="@+id/calendar_week_btn"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
@@ -91,3 +91,5 @@
     </LinearLayout>
 
 </LinearLayout>
+
+

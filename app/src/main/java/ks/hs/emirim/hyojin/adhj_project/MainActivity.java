@@ -1,4 +1,4 @@
-package ks.hs.emirim.hyojin.adhj_project;
+ package ks.hs.emirim.hyojin.adhj_project;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,11 +43,20 @@ public class MainActivity extends AppCompatActivity {
         Button btn2 = findViewById(R.id.btn2);
         btn2.setOnClickListener(btnListener2);
 
-        Button btn3 = findViewById(R.id.btn3);
-        btn3.setOnClickListener(btnListener3);
+//        Button btn3 = findViewById(R.id.calendar_week_btn);
+//        btn3.setOnClickListener(btnListener3);
 
         Button btn4 = findViewById(R.id.btn4);
         btn4.setOnClickListener(btnListener4);
+
+        Button weekBtn = (Button)findViewById(R.id.calendar_week_btn);
+        weekBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,TaTCalendarWeekActivity.class);
+                startActivity(intent);
+            }
+        });
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
@@ -183,14 +192,14 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
     };
-    View.OnClickListener btnListener3 = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent intent = new Intent(getApplicationContext(), DayActivity.class);
-            startActivity(intent);
-            finish();
-        }
-    };
+//    View.OnClickListener btnListener3 = new View.OnClickListener() {
+//        @Override
+//        public void onClick(View view) {
+//            Intent intent = new Intent(getApplicationContext(),TaTCalendarWeekFragment.class);
+//            startActivity(intent);
+//            finish();
+//        }
+//    };
     View.OnClickListener btnListener4 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {

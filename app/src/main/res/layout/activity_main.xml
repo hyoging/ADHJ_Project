@@ -118,7 +118,6 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_marginTop="-50dp"
-                android:layout_marginEnd="8dp"
                 android:text="삭제"
                 android:fontFamily="@font/nanumbarunpenb"
                 android:visibility="invisible"
@@ -148,7 +147,7 @@
             android:text="주간"  />
 
         <Button
-            android:id="@+id/btn3"
+            android:id="@+id/calendar_week_btn"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:fontFamily="@font/nanumbarunpenb"
